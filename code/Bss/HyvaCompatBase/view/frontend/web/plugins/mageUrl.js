@@ -1,0 +1,1 @@
+!function(){"use strict";function e(){Alpine.magic("mageUrl",((e,n)=>(e,n)=>{e=e.replace(/(^\/)?(\/$)?/,"");const i=new URL(BASE_URL+e);return Object.keys(n).map((e=>{i.searchParams.append(e,n[e])})),i.href}))}document.addEventListener("alpine:init",(()=>{window.Alpine.plugin(e)}))}();

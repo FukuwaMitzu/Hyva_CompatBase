@@ -1,0 +1,21 @@
+{
+  "name": "@hyva/rollup",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "BUILD_ENV=development rollup -c rollup-setup.js",
+    "build:prod": "BUILD_ENV=production rollup -c rollup-setup.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^3.20.2"
+  },
+  "dependencies": {
+    "glob": "^9.3.4"
+  }
+}
