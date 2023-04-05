@@ -10,7 +10,7 @@ const production = {
         chunkFileNames: 'chunks/[name]-[hash]',
     },
     plugins: [
-        nodeResolve(),
+        nodeResolve({modulePaths:  [path.join(process.cwd(), 'node_modules')]}),
         terser({
             maxWorkers: 4
         }),
@@ -27,7 +27,7 @@ const development = {
         sourcemap: 'inline'
     },
     plugins: [
-        nodeResolve(),
+        nodeResolve({modulePaths:  [path.join(process.cwd(), 'node_modules')]}),
         bootstrap.moduleAliasResolver()
     ]
 }
