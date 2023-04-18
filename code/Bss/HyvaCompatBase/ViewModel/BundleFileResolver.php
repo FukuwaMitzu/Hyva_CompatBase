@@ -1,14 +1,14 @@
 <?php
 
 namespace Bss\HyvaCompatBase\ViewModel;
-
+use Magento\Framework\View\Element\Block\ArgumentInterface;
 use Magento\Framework\View\Asset\Repository;
 
 /**
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-class BundleFileResolver
+class BundleFileResolver implements ArgumentInterface
 {
     protected Repository $assetRepository;
 
